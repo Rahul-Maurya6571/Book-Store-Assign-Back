@@ -13,7 +13,9 @@ require("./models/book")
 
 //cors
 app.use(express.json())
-app.use(cors())
+app.use(cors({
+    origin:"https://book-stote-assign-front.onrender.com"
+}))
 
 //routes
 app.use(require("./routes/user"))
